@@ -1,11 +1,19 @@
 /* Zepto v1.2.0 - zepto event ajax form ie - zeptojs.com/license */
+
+//     内容引用于：
+//     Zepto 源码全剖析 地址：https://zhangxiang958.github.io/2017/02/16/Zepto%20%E6%BA%90%E7%A0%81%E5%85%A8%E5%89%96%E6%9E%90/
+//     zepto对象思想与源码分析  地址:https://www.kancloud.cn/wangfupeng/zepto-design-srouce/173692
+//     以及英文原文注释翻译
+
 (function(global, factory) {
   if (typeof define === 'function' && define.amd)
     define(function() { return factory(global) })
   else
     factory(global)
 }(this, function(window) {
+  
   var Zepto = (function() {
+  // 变量初始化
   var undefined, key, $, classList, emptyArray = [], concat = emptyArray.concat, filter = emptyArray.filter, slice = emptyArray.slice,
     document = window.document,
     elementDisplay = {}, classCache = {},

@@ -67,6 +67,7 @@ var Zepto = (function() {
         },
         // 判断是否是arr
         // Array.isArray() 用于确定传递的值是否是Array,如果对象是 Array，则为true; 否则为false。
+            // 兼容IE9以上
         isArray = Array.isArray ||
           function(object){ return object instanceof Array }
     

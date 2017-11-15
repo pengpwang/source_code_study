@@ -66,6 +66,7 @@ var Zepto = (function() {
           'contenteditable': 'contentEditable'
         },
         // 判断是否是arr
+        // Array.isArray() 用于确定传递的值是否是Array,如果对象是 Array，则为true; 否则为false。
         isArray = Array.isArray ||
           function(object){ return object instanceof Array }
     
